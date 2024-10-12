@@ -16,3 +16,6 @@
 
 .idea/
 .vscode/
+
+# config file avoid exposing private data
+*_dev.yaml
