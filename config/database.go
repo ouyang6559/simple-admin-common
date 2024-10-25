@@ -44,6 +44,8 @@ type DatabaseConf struct {
 	MysqlConfig  string `json:",optional,env=DATABASE_MYSQL_CONFIG"`
 	PGConfig     string `json:",optional,env=DATABASE_PG_CONFIG"`
 	SqliteConfig string `json:",optional,env=DATABASE_SQLITE_CONFIG"`
+	LogMode      string `json:",optional,env=DATABASE_LOG_MODE"`
+	MaxIdleConn  int    `json:",optional,default=100,env=DATABASE_MAX_IDLE_CONN"`
 }
 
 // NewNoCacheDriver returns an Ent driver without cache.
